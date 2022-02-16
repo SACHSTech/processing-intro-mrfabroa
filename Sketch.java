@@ -7,7 +7,7 @@ public class Sketch extends PApplet {
    * Called once at the beginning of execution, put your size all in this method
    */
   public void settings() {
-	// put your size call here
+	  // put your size call here
     size(400, 400);
   }
 
@@ -24,12 +24,19 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
+	  // sample code, delete this stuff
     stroke(128);
     line(150, 25, 270, 350);  
 
     stroke(255);
     line(50, 125, 70, 50);  
+
+    if (mousePressed) {
+      fill(0);
+    } else {
+      fill(255);
+    }
+    ellipse(mouseX, mouseY, 80, 80);
   }
   
   // define other methods down here.
