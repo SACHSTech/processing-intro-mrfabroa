@@ -25,15 +25,17 @@ public class Sketch extends PApplet {
   public void draw() {
 	  
 	  // sample code, delete this stuff
-    stroke(128);
+    stroke(237, 47, 228);
     line(150, 25, 270, 350);  
 
     stroke(255);
     line(50, 125, 70, 50);  
 
     if (mousePressed) {
+      stroke(0);
       fill(0);
     } else {
+      stroke(255);
       fill(255);
     }
     ellipse(mouseX, mouseY, 80, 80);
